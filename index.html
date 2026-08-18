@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickadu Video Ad Test</title>
+    <title>Clickadu Large Video Ad Test</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 100px;
+            padding-top: 50px;
             background-color: #f4f4f9;
         }
         #unlock-btn {
@@ -19,21 +19,31 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-bottom: 20px;
         }
         #unlock-btn:hover {
             background-color: #218838;
+        }
+
+        /* ভিডিও অ্যাডটি বড় দেখানোর জন্য সিএসএস কাস্টমাইজেশন */
+        iframe, div[id*="ad"], .wpadmngr-ad, ins {
+            max-width: 100% !important;
+            width: 600px !important;
+            height: 350px !important;
+            margin: 0 auto !important;
+            display: block !important;
         }
     </style>
 </head>
 <body>
 
-    <h2>অ্যাড টেস্ট করার পেজ</h2>
-    <p>নিচের আনলক বাটনে ক্লিক করে অ্যাডটি টেস্ট করুন:</p>
+    <h2>বড় ভিডিও অ্যাড টেস্ট পেজ</h2>
+    <p>নিচের আনলক বাটনে ক্লিক করে বড় আকারের অ্যাডটি দেখুন:</p>
 
     <!-- আপনার আনলক বাটন -->
     <button id="unlock-btn">Unlock Now</button>
 
-    <!-- আপনার Clickadu থেকে পাওয়া অ্যাড কোডটি এখানে সঠিকভাবে বসানো হলো -->
+    <!-- আপনার Clickadu অ্যাড কোড -->
     <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="454836"></script>
 
 </body>
